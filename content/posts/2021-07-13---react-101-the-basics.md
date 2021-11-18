@@ -3,7 +3,7 @@ title: "React 101: The Basics"
 description: The basics of react
 image: /static/react-101-the-basics.jpg
 tags: [react, basics]
-published: true
+published: false
 ---
 
 React is one of the most in demand tools in the job market these days, but if you don't know it should you just skip it? You could, but I still think it's worth learning. I'm going to teach you some basics about react to get you started. This should be enough information to give you an understanding of what React is and how to set it up.
