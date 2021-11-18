@@ -12,7 +12,12 @@ import { getContentBySlug, getAllContent } from 'utils/contentHelpers';
 import remarkUnwrapImages from 'remark-unwrap-images';
 import config from 'content/config';
 
-const BlogPost = ({ post, posts, totalPages, page }) => {
+const BlogPost = ({
+	post = null,
+	posts = [],
+	totalPages = null,
+	page = null,
+}) => {
 	{
 		/* Individual Post */
 	}
