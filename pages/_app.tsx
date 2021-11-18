@@ -2,6 +2,7 @@ import React from 'react';
 import Script from 'next/script';
 import { Layout } from 'components/layout';
 import { SiteProvider } from 'utils/siteContext';
+import { Seo } from 'components/seo';
 import 'prismjs/themes/prism.css';
 import 'styles/app.scss';
 

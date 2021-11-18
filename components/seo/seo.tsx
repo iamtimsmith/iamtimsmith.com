@@ -7,6 +7,7 @@ export const Seo = ({ title, description, image = config.siteImage }) => {
 		<Head>
 			{/* prettier-ignore */}
 			<title>{title} | {config.siteTitle}</title>
+			<link rel='icon' href='/static/favicon.ico' />
 			<meta name='description' content={description} />
 			<meta name='og:title' content={title} />
 			<meta name='og:description' content={description} />
