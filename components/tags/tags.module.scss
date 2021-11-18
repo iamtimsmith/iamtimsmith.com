@@ -1,0 +1,11 @@
+.tags {
+	margin: var(--spacing-8) var(--spacing-0);
+	font-size: var(--font-size-sm);
+
+	&__tag {
+		background: var(--color-grey-200);
+		padding: var(--spacing-1);
+		margin: var(--spacing-1);
+		border-radius: 3px;
+	}
+}
