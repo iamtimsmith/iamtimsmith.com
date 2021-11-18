@@ -5,7 +5,9 @@ import { Posts } from 'components/posts';
 import { Pagination } from 'components/pagination';
 import { PostFooter } from 'components/post-footer';
 import { Gif } from 'components/gif';
+import { Seo } from 'components/seo';
 import { Image } from 'components/image';
+import { EmailSignup } from 'components/email-signup';
 import { getContentBySlug, getAllContent } from 'utils/contentHelpers';
 import remarkUnwrapImages from 'remark-unwrap-images';
 import config from 'content/config';
@@ -21,7 +23,10 @@ const BlogPost = ({ post, posts, totalPages, page }) => {
 					{post.title}
 					{!post.published && <span className='draft'>- Draft</span>}
 				</h1>
-				<MDXRemote {...post.content} components={{ Gif, img: Image }} />
+				<MDXRemote
+					{...post.content}
+					components={{ Gif, EmailSignup, Seo, img: Image }}
+				/>
 				<PostFooter data={post} />
 			</>
 		);

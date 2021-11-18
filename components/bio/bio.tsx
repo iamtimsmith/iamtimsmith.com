@@ -12,7 +12,7 @@ export const Bio = ({ showAuthorName = false }) => {
 			<Img
 				src={author.image}
 				className={_['bio__image']}
-				alt={author.title}
+				alt={author.name}
 				width={100}
 				height={100}
 			/>

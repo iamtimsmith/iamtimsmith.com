@@ -83,7 +83,7 @@ I know what you're thinking. _Super Cool, Tim. Now what?_
 
 <Gif
 	src='https://media.giphy.com/media/20KLYSIhq35V4EpVlC/giphy.mp4'
-	width={300}
+	width='300'
 />
 
 I'm glad you asked. That brings us to the next section:
@@ -283,7 +283,8 @@ Working with state is an essential skill to have in react js. It makes our lives
 
 In this post, we talked about what state is, how to create state, how to change state, and how to manipulate state from a child component. This should be enough information for us to control the data within our components in most cases. Now go forth and build cool stuff!
 
-<br />
+
+<!-- <br />
 <iframe
 	height='600'
 	style='width: 100%;'
@@ -297,4 +298,4 @@ In this post, we talked about what state is, how to create state, how to change 
 	See the Pen <a href='https://codepen.io/iamtimsmith/pen/xMqdjV/'>xMqdjV</a> by
 	Tim Smith (<a href='https://codepen.io/iamtimsmith'>@iamtimsmith</a>) on{' '}
 	<a href='https://codepen.io'>CodePen</a>.
-</iframe>
+</iframe> -->
