@@ -1,6 +1,8 @@
 import React from 'react';
 import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
+import remarkUnwrapImages from 'remark-unwrap-images';
+import remarkPrism from 'remark-prism';
 import { Posts } from 'components/posts';
 import { Pagination } from 'components/pagination';
 import { PostFooter } from 'components/post-footer';
@@ -9,7 +11,6 @@ import { Seo } from 'components/seo';
 import { Image } from 'components/image';
 import { EmailSignup } from 'components/email-signup';
 import { getContentBySlug, getAllContent } from 'utils/contentHelpers';
-import remarkUnwrapImages from 'remark-unwrap-images';
 import config from 'content/config';
 
 const BlogPost = ({
@@ -84,7 +85,7 @@ export const getStaticProps = async ({ params }) => {
 		]);
 		post.content = await serialize(post.content, {
 			mdxOptions: {
-				remarkPlugins: [require('remark-prism'), remarkUnwrapImages],
+				remarkPlugins: [remarkPrism, remarkUnwrapImages],
 			},
 		});
 
